@@ -1,0 +1,39 @@
+{
+    "name": "input-text",
+    "version": "0.1.0",
+    "description": "A default package description.",
+    "main": "dist/index.js",
+    "files": [
+        "dist/"
+    ],
+    "scripts": {
+        "build": "webpack --define process.env.NODE_ENV=\"'production'\" --config ./webpack.prod.config.js",
+        "build-full": "npm run build -s",
+        "start": "webpack-dev-server --config ./webpack.dev.config.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:jonshaffer/cba-input-text.git"
+    },
+    "devDependencies": {
+        "babel-core": "^6.21.0",
+        "babel-loader": "^6.2.10",
+        "babel-plugin-transform-runtime": "^6.23.0",
+        "babel-preset-es2015": "^6.22.0",
+        "babel-runtime": "^6.23.0",
+        "clean-webpack-plugin": "^0.1.15",
+        "copy-webpack-plugin": "^4.0.1",
+        "css-loader": "^0.26.2",
+        "ng-annotate-loader": "^0.2.0",
+        "node-sass": "^4.5.0",
+        "raw-loader": "^0.5.1",
+        "rimraf": "^2.6.1",
+        "sass-loader": "^6.0.2",
+        "style-loader": "^0.13.2",
+        "webpack": "^2.2.1",
+        "webpack-dev-server": "^2.2.0"
+    },
+    "dependencies": {
+        "angular": "^1.5.0"
+    }
+}
